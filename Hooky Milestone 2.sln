@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{31759A41-ACB6-A207-9520-49CE90467E82}") = "Hooky Milestone 2", "Assembly-CSharp.csproj", "{0552BB4B-FD4B-772E-C0F2-88CF4B22E138}"
+EndProject
+Project("{31759A41-ACB6-A207-9520-49CE90467E82}") = "Hooky Milestone 2", "Assembly-UnityScript.unityproj", "{1F209FE8-CDBD-67B5-5AD5-AF0FED54EEA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0552BB4B-FD4B-772E-C0F2-88CF4B22E138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0552BB4B-FD4B-772E-C0F2-88CF4B22E138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0552BB4B-FD4B-772E-C0F2-88CF4B22E138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0552BB4B-FD4B-772E-C0F2-88CF4B22E138}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F209FE8-CDBD-67B5-5AD5-AF0FED54EEA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F209FE8-CDBD-67B5-5AD5-AF0FED54EEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F209FE8-CDBD-67B5-5AD5-AF0FED54EEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F209FE8-CDBD-67B5-5AD5-AF0FED54EEA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

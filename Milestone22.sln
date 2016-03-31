@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{94276A20-8EC9-A20F-9855-047BEFB6072B}") = "Milestone22", "Assembly-CSharp.csproj", "{C416BF1E-D487-B5BC-3757-0A79A53F9AFF}"
+EndProject
+Project("{94276A20-8EC9-A20F-9855-047BEFB6072B}") = "Milestone22", "Assembly-UnityScript.unityproj", "{7F77A928-825A-C4FA-FB9E-C2E6BBD51C22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C416BF1E-D487-B5BC-3757-0A79A53F9AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C416BF1E-D487-B5BC-3757-0A79A53F9AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C416BF1E-D487-B5BC-3757-0A79A53F9AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C416BF1E-D487-B5BC-3757-0A79A53F9AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F77A928-825A-C4FA-FB9E-C2E6BBD51C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F77A928-825A-C4FA-FB9E-C2E6BBD51C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F77A928-825A-C4FA-FB9E-C2E6BBD51C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F77A928-825A-C4FA-FB9E-C2E6BBD51C22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
