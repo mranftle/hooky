@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BCFB3FFE-04BF-FA19-8740-600E8B70BA8B}</ProjectGuid>
+    <ProjectGuid>{DB36E68B-AC5C-2466-2CE2-48AEA1167D57}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -69,8 +69,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Materials\FemaleTeacher\Scripts\CamTarget.cs" />
+    <Compile Include="Assets\Materials\FemaleTeacher\Scripts\CharacterDemoController.cs" />
+    <Compile Include="Assets\Materials\FemaleTeacher\Scripts\MouseOrbit.cs" />
+    <Compile Include="Assets\Materials\FemaleTeacher\Scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Materials\FemaleTeacher\Scripts\Outfitter.cs" />
+    <Compile Include="Assets\Materials\FemaleTeacher\Scripts\RootMotionOff.cs" />
+    <Compile Include="Assets\Materials\FemaleTeacher\Scripts\SkinnedMeshCombiner.cs" />
     <Compile Include="Assets\Materials\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Materials\Scripts\CharactersOnMinimap.cs" />
     <Compile Include="Assets\Materials\Scripts\DeanPatrol.cs" />
+    <Compile Include="Assets\Materials\Scripts\DoorController.cs" />
+    <Compile Include="Assets\Materials\Scripts\KeyDoorController.cs" />
+    <Compile Include="Assets\Materials\Scripts\MinimapCameraController.cs" />
     <Compile Include="Assets\Materials\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Materials\Scripts\Rotator.cs" />
     <Compile Include="Assets\Materials\Scripts\TeacherFootStep.cs" />
@@ -79,7 +90,9 @@
     <Compile Include="Assets\Materials\Scripts\WaterBottleController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Keys\Key\readME keys.txt" />
     <None Include="Assets\Materials\Hand painted bottle\readme.txt" />
+    <None Include="Assets\Materials\elevator\LICENSE.TXT" />
     <None Include="Assets\TaichiCharacterPack\Readme.txt" />
     <None Include="Assets\TaichiCharacterPack\Releasenote.txt" />
     <None Include="Assets\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
