@@ -15,7 +15,8 @@ public class PlayerController : MonoBehaviour
 	public static float initialWater;
 	//current water:
 	public static float water;
-	//private float water;
+    //private float water;
+    public bool password, grade, solution, key; 
 
 
 
@@ -45,6 +46,7 @@ public class PlayerController : MonoBehaviour
 		animatorController = GetComponent<Animator> ();
 		//waterBar = GetComponent<Scrollbar> ();
 		waterBar.size = 1;
+        password = grade = solution = key= false;
 	}
 
 	void FixedUpdate()
@@ -128,15 +130,34 @@ public class PlayerController : MonoBehaviour
 	void OnTriggerEnter(Collider other)
 	{
 		if (other.gameObject.CompareTag("Door"))
-		{	
-			print ("YOU ESCAPED!!"); 
-			winImage.GetComponent<RawImage>().enabled = true;
-			//SceneManager.LoadScene("levelname");
-		}
-	}
+		{
+            if (password == grade == solution == true)
+            {
+                print("YOU ESCAPED!!");
+                winImage.GetComponent<RawImage>().enabled = true;
+            }
+        }
 
-	void OnTriggerStay (Collider other)
-	{
+        if (other.gameObject.CompareTag("Password"))
+        {
+            print("You found the password");
+            password = true;           
+        }
+        if (other.gameObject.CompareTag("Computer"))
+        {
+            print("Your grade is now an A+!");
+            grade = true;
+        }
+        if (other.gameObject.CompareTag("Solution"))
+        {
+            print("Your grade is now an A+!");
+            solution = true;
+        }
+        if (other.gameObject.CompareTag("Key"))
+        {
+            print("You now have the key to exit the building");
+            key = true;
+        }
+    }
 
-	}
 }
