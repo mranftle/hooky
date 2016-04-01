@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BF0916FE-1176-975A-E046-334C04BFCE43}</ProjectGuid>
+    <ProjectGuid>{810D807A-9CA7-7E7D-9729-F0F592985575}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,15 +45,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Door1Controller.cs" />
      <Compile Include="Assets\Materials\FemaleTeacher\Scripts\CamTarget.cs" />
      <Compile Include="Assets\Materials\FemaleTeacher\Scripts\CharacterDemoController.cs" />
      <Compile Include="Assets\Materials\FemaleTeacher\Scripts\MouseOrbit.cs" />
+     <Compile Include="Assets\Materials\FemaleTeacher\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Materials\FemaleTeacher\Scripts\Outfitter.cs" />
      <Compile Include="Assets\Materials\FemaleTeacher\Scripts\RootMotionOff.cs" />
      <Compile Include="Assets\Materials\FemaleTeacher\Scripts\SkinnedMeshCombiner.cs" />
      <Compile Include="Assets\Materials\Scripts\CameraController.cs" />
      <Compile Include="Assets\Materials\Scripts\DeanPatrol.cs" />
+     <Compile Include="Assets\Materials\Scripts\DoorController.cs" />
+     <Compile Include="Assets\Materials\Scripts\KeyDoorController.cs" />
      <Compile Include="Assets\Materials\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Materials\Scripts\Rotator.cs" />
      <Compile Include="Assets\Materials\Scripts\TeacherFootStep.cs" />

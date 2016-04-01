@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{FF8AE2C8-B0AA-830A-9C3C-D56550B7EC60}") = "Hooky_M3", "Assembly-CSharp.csproj", "{810D807A-9CA7-7E7D-9729-F0F592985575}"
+EndProject
+Project("{FF8AE2C8-B0AA-830A-9C3C-D56550B7EC60}") = "Hooky_M3", "Assembly-CSharp-Editor.csproj", "{4E98D6BA-931B-C833-46FB-E0833BDCF13A}"
+EndProject
+Project("{FF8AE2C8-B0AA-830A-9C3C-D56550B7EC60}") = "Hooky_M3", "Assembly-UnityScript.unityproj", "{984F00F1-8AB5-2E75-8392-4EAAD53BC22C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{810D807A-9CA7-7E7D-9729-F0F592985575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810D807A-9CA7-7E7D-9729-F0F592985575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810D807A-9CA7-7E7D-9729-F0F592985575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810D807A-9CA7-7E7D-9729-F0F592985575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E98D6BA-931B-C833-46FB-E0833BDCF13A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E98D6BA-931B-C833-46FB-E0833BDCF13A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E98D6BA-931B-C833-46FB-E0833BDCF13A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E98D6BA-931B-C833-46FB-E0833BDCF13A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{984F00F1-8AB5-2E75-8392-4EAAD53BC22C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{984F00F1-8AB5-2E75-8392-4EAAD53BC22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{984F00F1-8AB5-2E75-8392-4EAAD53BC22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{984F00F1-8AB5-2E75-8392-4EAAD53BC22C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
