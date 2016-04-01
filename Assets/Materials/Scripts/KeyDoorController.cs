@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Door1Controller : MonoBehaviour {
+public class KeyDoorController : MonoBehaviour {
 
 
 

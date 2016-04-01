@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Door1Controller : MonoBehaviour {
+public class DoorController : MonoBehaviour {
 
 
 
@@ -18,8 +18,6 @@ public class Door1Controller : MonoBehaviour {
     void Update()
     {
 
-        if (GameObject.Find("Player").GetComponent<PlayerController>().password == GameObject.Find("Player").GetComponent<PlayerController>().grade == GameObject.Find("Player").GetComponent<PlayerController>().solution == true)
-        {
             Vector3 PlayerPosition = GameObject.Find("Player").transform.position;
             Vector3 DoorPosition = this.transform.position;
 
@@ -48,4 +46,4 @@ public class Door1Controller : MonoBehaviour {
 
 
     }
-}
+
