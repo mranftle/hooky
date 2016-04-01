@@ -49,3 +49,7 @@
 /Users/wintyeehnin/Documents/Classes/CSE 450A/Hooky/Temp/bin/Debug/Mono.Cecil.Mdb.dll
 /Users/wintyeehnin/Documents/Classes/CSE 450A/Hooky/Temp/bin/Debug/Assembly-CSharp.dll.mdb
 /Users/wintyeehnin/Documents/Classes/CSE 450A/Hooky/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/obj/Debug/Assembly-CSharp.dll
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/Assembly-CSharp.dll
