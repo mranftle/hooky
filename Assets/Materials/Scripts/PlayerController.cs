@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
 		//waterBar = GetComponent<Scrollbar> ();
 		waterBar.size = 1;
         password = grade = solution = key= false;
+        password = true;
 	}
 
 	void FixedUpdate()
@@ -138,25 +139,38 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (other.gameObject.CompareTag("Password"))
+        if (other.gameObject.CompareTag("Debug"))
         {
             print("You found the password");
             password = true;           
         }
         if (other.gameObject.CompareTag("Computer"))
         {
-            print("Your grade is now an A+!");
-            grade = true;
+
+            if (password)
+            {
+                print("Your grade is now an A+!");
+                grade = true;
+            }
+            else
+            {
+                print("You need the password to change your grade");
+            }
         }
         if (other.gameObject.CompareTag("Solution"))
         {
-            print("Your grade is now an A+!");
+            print("You stole the test solutions!");
             solution = true;
+            other.gameObject.SetActive(false);
         }
         if (other.gameObject.CompareTag("Key"))
         {
-            print("You now have the key to exit the building");
-            key = true;
+            if (grade == solution == true)
+            {
+                print("You now have the key to exit the building");
+                key = true;
+                other.gameObject.SetActive(false);
+            }
         }
     }
 

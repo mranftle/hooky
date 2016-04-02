@@ -18,7 +18,8 @@ public class KeyDoorController : MonoBehaviour {
     void Update()
     {
 
-        if (GameObject.Find("Player").GetComponent<PlayerController>().password == GameObject.Find("Player").GetComponent<PlayerController>().grade == GameObject.Find("Player").GetComponent<PlayerController>().solution == true)
+        // if (GameObject.Find("Player").GetComponent<PlayerController>().grade == GameObject.Find("Player").GetComponent<PlayerController>().solution == true)
+        if (GameObject.Find("Player").GetComponent<PlayerController>().solution == true)
         {
             Vector3 PlayerPosition = GameObject.Find("Player").transform.position;
             Vector3 DoorPosition = this.transform.position;

@@ -1,49 +1,42 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DoorController : MonoBehaviour {
+public class DoorController : MonoBehaviour
+{
 
+    //Pivot point to rotate the door
+    public Vector3 pivot;
+    Vector3 initialPosition;
 
-
-	bool isDoorOpen = false;
-    
-
-	// Use this for initialization
-	void Start () {
-
-        
+    // Use this for initialization
+    void Start()
+    {
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        Vector3 PlayerPosition = GameObject.Find("Player").transform.position;
+        Vector3 DoorPosition = this.transform.position;
+        initialPosition = this.transform.position;
 
-            Vector3 PlayerPosition = GameObject.Find("Player").transform.position;
-            Vector3 DoorPosition = this.transform.position;
-
-            Vector3 pivot = DoorPosition;
-
-            pivot.z = -8f;
-
-
-
-            if (Vector3.Distance(PlayerPosition, DoorPosition) < 6f && isDoorOpen == false)
-            {
-
-                transform.RotateAround(pivot, Vector3.up, -90);
-                isDoorOpen = true;
-            }
-
-            if (Vector3.Distance(PlayerPosition, DoorPosition) > 10f && isDoorOpen == true)
-            {
-                transform.RotateAround(pivot, Vector3.up, 90);
-                transform.position = new Vector3(45.11f, 3.15f, -9f);
-                isDoorOpen = false;
-            }
-
-
+        if (Vector3.Distance(PlayerPosition, DoorPosition) < 5f && (int)this.transform.eulerAngles.y == 90)
+        {
+            transform.RotateAround(pivot, Vector3.up, -90);
         }
-
-
+        else if (Vector3.Distance(PlayerPosition, DoorPosition) > 7f && (int)this.transform.eulerAngles.y == 0)
+        {
+            transform.RotateAround(pivot, Vector3.up, 90);
+            transform.position = initialPosition;
+            /*if (this.tag == "Door1")
+            {
+                transform.position = new Vector3(45.11f, 3.15f, -9f);
+            }
+            else
+            {
+                transform.position = new Vector3(106.414f, 3.04f, -126.02f);
+            }*/
+        }
     }
+}
 

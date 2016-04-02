@@ -27,7 +27,7 @@ public class CharactersOnMinimap : MonoBehaviour {
 			pivot.x = Screen.width * (minimapCamera.rect.x + (Position.x * minimapCamera.rect.width));
 			pivot.y = Screen.height * (minimapCamera.rect.y + (Position.y * minimapCamera.rect.height));
 
-			arrowRect = new Rect (pivot.x - 10, pivot.y * 3.9f, 12, 12);
+			arrowRect = new Rect (pivot.x - 10, pivot.y * 3.9f, 20, 20);
 			GUIUtility.RotateAroundPivot (angle, arrowRect.center);
 			GUI.DrawTexture (arrowRect, playerArrow);
 		}
