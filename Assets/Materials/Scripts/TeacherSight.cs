@@ -27,11 +27,12 @@ public class TeacherSight : MonoBehaviour
 
         void OnTriggerStay(Collider other)
     {
+		print ("trigger");
         // If the player has entered the trigger sphere...
 		if (other.gameObject == player && other.GetType() == typeof(SphereCollider)){
             // By default the player is not in sight.
             playerInSight = false;
-
+			print ("player in sphere");
             // Create a vector from the enemy to the player and store the angle between it and forward.
             Vector3 direction = other.transform.position - transform.position;
             float angle = Vector3.Angle(direction, transform.forward);
@@ -40,7 +41,7 @@ public class TeacherSight : MonoBehaviour
             if (angle < fieldOfViewAngle * 0.5f)
             {
                 RaycastHit hit;
-
+				print ("hit");
                 // ... and if a raycast towards the player hits something...
                 if (Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, col.radius))
                 {
@@ -49,6 +50,7 @@ public class TeacherSight : MonoBehaviour
                     {
                         // ... the player is in sight.
                         playerInSight = true; //Now we need to kill the game somehow
+						print("raycast hit");
 						busted.GetComponent<RawImage>().enabled = true;
                         //Application.Quit(); //Why doesn't this happen?
                     }

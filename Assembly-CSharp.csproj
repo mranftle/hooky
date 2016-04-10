@@ -68,6 +68,7 @@
      <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\M01\animation_list.txt" />
      <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\background_list.txt" />
      <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Asphodel\facial_texture_list_b.txt" />
+     <None Include="Assets\Locker_room_props\readme.txt" />
      <None Include="Assets\TaichiCharacterPack\Viewer\Resources\Taichi\Viewer Settings\title_text.txt" />
      <None Include="Assets\TaichiCharacterPack\Viewer\Resources\Taichi\Viewer Settings\fbx_list.txt" />
      <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Arum\facial_texture_list_a.txt" />

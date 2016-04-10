@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
 
 				water -= 1;
 				waterBar.size = (float)water / initialWater;
-				print (water.ToString ());
+				//print (water.ToString ());
 
 				animatorController.SetBool ("isRunning", true);
 
