@@ -30,14 +30,14 @@ public class KeyDoorController : MonoBehaviour {
 
 
 
-            if (Vector3.Distance(PlayerPosition, DoorPosition) < 6f && isDoorOpen == false)
+            if (Vector3.Distance(PlayerPosition, DoorPosition) < 10f && isDoorOpen == false)
             {
-
+                print("The door should open");
                 transform.RotateAround(pivot, Vector3.up, -90);
                 isDoorOpen = true;
             }
 
-            if (Vector3.Distance(PlayerPosition, DoorPosition) > 10f && isDoorOpen == true)
+            if (Vector3.Distance(PlayerPosition, DoorPosition) > 11f && isDoorOpen == true)
             {
                 transform.RotateAround(pivot, Vector3.up, 90);
                 transform.position = new Vector3(45.11f, 3.15f, -9f);

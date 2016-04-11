@@ -4,39 +4,48 @@ using System.Collections;
 public class DoorController : MonoBehaviour
 {
 
-    //Pivot point to rotate the door
-    public Vector3 pivot;
-    Vector3 initialPosition;
+
+
+    bool isDoorOpen = false;
+    Vector3 DoorPosition;
 
     // Use this for initialization
     void Start()
     {
+        DoorPosition = this.transform.position;
+
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        Vector3 PlayerPosition = GameObject.Find("Player").transform.position;
-        Vector3 DoorPosition = this.transform.position;
-        initialPosition = this.transform.position;
 
-        if (Vector3.Distance(PlayerPosition, DoorPosition) < 5f && (int)this.transform.eulerAngles.y == 90)
-        {
-            transform.RotateAround(pivot, Vector3.up, -90);
-        }
-        else if (Vector3.Distance(PlayerPosition, DoorPosition) > 7f && (int)this.transform.eulerAngles.y == 0)
-        {
-            transform.RotateAround(pivot, Vector3.up, 90);
-            transform.position = initialPosition;
-            /*if (this.tag == "Door1")
+            Vector3 PlayerPosition = GameObject.Find("Player").transform.position;
+           
+
+            Vector3 pivot = DoorPosition;
+
+            pivot.z += 1.3f;
+
+
+
+            if (Vector3.Distance(PlayerPosition, DoorPosition) < 10f && isDoorOpen == false)
             {
-                transform.position = new Vector3(45.11f, 3.15f, -9f);
+                print("The door should open");
+                transform.RotateAround(pivot, Vector3.up, -90);
+                isDoorOpen = true;
             }
-            else
+
+            if (Vector3.Distance(PlayerPosition, DoorPosition) > 11f && isDoorOpen == true)
             {
-                transform.position = new Vector3(106.414f, 3.04f, -126.02f);
-            }*/
+                transform.RotateAround(pivot, Vector3.up, 90);
+                transform.position = DoorPosition;
+                isDoorOpen = false;
+            }
+
+
         }
+
+
     }
-}
 
