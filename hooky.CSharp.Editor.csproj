@@ -103,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Keys\Key\readME keys.txt" />
+    <None Include="Assets\Locker_room_props\readme.txt" />
     <None Include="Assets\Materials\Hand painted bottle\readme.txt" />
     <None Include="Assets\Materials\elevator\LICENSE.TXT" />
     <None Include="Assets\TaichiCharacterPack\Readme.txt" />

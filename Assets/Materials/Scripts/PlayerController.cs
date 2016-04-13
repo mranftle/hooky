@@ -132,17 +132,18 @@ public class PlayerController : MonoBehaviour
 	{
 		if (other.gameObject.CompareTag("Door"))
 		{
-            if (password == grade == solution == true)
+            if (password == grade == solution == key == true)
             {
                 print("YOU ESCAPED!!");
                 winImage.GetComponent<RawImage>().enabled = true;
             }
         }
 
-        if (other.gameObject.CompareTag("Debug"))
+        if (other.gameObject.CompareTag("Password"))
         {
             print("You found the password");
-            password = true;           
+            password = true;
+            other.gameObject.SetActive(false);
         }
         if (other.gameObject.CompareTag("Computer"))
         {

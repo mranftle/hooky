@@ -23,7 +23,7 @@ public class TeacherFootStep : MonoBehaviour {
 		distance = Vector3.Magnitude(transform.position - player.transform.position);
 
 		if (distance <= 25 && nav.velocity.magnitude >0 && GetComponent<AudioSource>().isPlaying == false) {
-			footstepaudio.Play (44100/footSoundFrequency);  
+			footstepaudio.PlayDelayed (44100/footSoundFrequency);  
 		}
 		//		else if (cc.velocity.magnitude > 4f && GetComponent<AudioSource>().isPlaying == false) {
 		//			GetComponent<AudioSource>().Play (44100/4);  
