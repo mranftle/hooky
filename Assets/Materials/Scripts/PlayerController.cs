@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
 		//waterBar = GetComponent<Scrollbar> ();
 		waterBar.size = 1;
         password = grade = solution = key= false;
-        password = true;
+        
 	}
 
 	void FixedUpdate()
@@ -132,10 +132,12 @@ public class PlayerController : MonoBehaviour
 	{
 		if (other.gameObject.CompareTag("Door"))
 		{
-            if (password == grade == solution == key == true)
+            if (key == true)
             {
                 print("YOU ESCAPED!!");
                 winImage.GetComponent<RawImage>().enabled = true;
+            }
+            else { //We need to tell them that they cannot leave without the key
             }
         }
 
@@ -152,6 +154,7 @@ public class PlayerController : MonoBehaviour
             {
                 print("Your grade is now an A+!");
                 grade = true;
+                //other.gameObject.SetActive(false);
             }
             else
             {
@@ -166,7 +169,7 @@ public class PlayerController : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Key"))
         {
-            if (grade == solution == true)
+            if (grade == true && solution == true)
             {
                 print("You now have the key to exit the building");
                 key = true;
