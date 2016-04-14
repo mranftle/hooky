@@ -28,6 +28,8 @@ public class DoorController : MonoBehaviour
                 print("The door should open");
                 transform.RotateAround(pivot, Vector3.up, -90);
                 isDoorOpen = true;
+				//just for now, delete this later.
+				gameObject.SetActive (false);
             }
         }
     }

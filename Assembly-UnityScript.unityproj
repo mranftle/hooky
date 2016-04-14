@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9D99709C-C047-35C6-CACA-5BDE66604C2F}</ProjectGuid>
+    <ProjectGuid>{2EE9CC2A-7761-00FB-C97A-D383655438D7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-UnityScript</AssemblyName>
@@ -54,6 +54,7 @@
      <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\M01\animation_list.txt" />
      <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\background_list.txt" />
      <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Asphodel\facial_texture_list_b.txt" />
+     <None Include="Assets\Locker_room_props\readme.txt" />
      <None Include="Assets\TaichiCharacterPack\Viewer\Resources\Taichi\Viewer Settings\title_text.txt" />
      <None Include="Assets\TaichiCharacterPack\Viewer\Resources\Taichi\Viewer Settings\fbx_list.txt" />
      <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\F03\Arum\facial_texture_list_a.txt" />

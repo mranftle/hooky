@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{BF0916FE-1176-975A-E046-334C04BFCE43}</ProjectGuid>
+    <ProjectGuid>{D56766EA-E966-3344-9540-3F94F83DEBF6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,6 +61,7 @@
      <Compile Include="Assets\Materials\Scripts\MinimapCameraController.cs" />
      <Compile Include="Assets\Materials\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Materials\Scripts\Rotator.cs" />
+     <Compile Include="Assets\Materials\Scripts\Story.cs" />
      <Compile Include="Assets\Materials\Scripts\TeacherFootStep.cs" />
      <Compile Include="Assets\Materials\Scripts\TeacherPatrol.cs" />
      <Compile Include="Assets\Materials\Scripts\TeacherSight.cs" />

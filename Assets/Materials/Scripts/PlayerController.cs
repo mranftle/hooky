@@ -165,7 +165,7 @@ public class PlayerController : MonoBehaviour
         {
             print("You stole the test solutions!");
             solution = true;
-            other.gameObject.SetActive(false);
+            //other.gameObject.SetActive(false);
         }
         if (other.gameObject.CompareTag("Key"))
         {
@@ -173,7 +173,7 @@ public class PlayerController : MonoBehaviour
             {
                 print("You now have the key to exit the building");
                 key = true;
-                other.gameObject.SetActive(false);
+                //other.gameObject.SetActive(false);
             }
         }
     }

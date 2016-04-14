@@ -27,32 +27,45 @@ public class TeacherSight : MonoBehaviour
 
         void OnTriggerStay(Collider other)
     {
-		//print ("trigger");
+		
 		//print (other);
         // If the player has entered the trigger sphere...
 		if (other.gameObject == player ){//&& other.GetType() == typeof(SphereCollider)){
             // By default the player is not in sight.
             playerInSight = false;
+			print ("trigger icinde");
 			//print ("player in sphere");
             // Create a vector from the enemy to the player and store the angle between it and forward.
             Vector3 direction = other.transform.position - transform.position;
+			direction.y = 0;
+			//print ("teacher:" + transform.position + "std:" + other.transform.position);
+
+
             float angle = Vector3.Angle(direction, transform.forward);
 
             // If the angle between forward and where the player is, is less than half the angle of view...
-            if (angle < fieldOfViewAngle * 0.5f)
+
+			//print("angle:" + angle.ToString());
+			//print("direction:" + direction);
+			if (angle < fieldOfViewAngle * 0.5f)
+            //if (true)
             {
                 RaycastHit hit;
-				//print ("hit");
+				print ("angle icinde");
                 // ... and if a raycast towards the player hits something...
-                if (!Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, col.radius))
+				if (Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, col.radius))
                 {
-					print ("raycast");
+					print ("in raycast");
+					print (hit.collider.tag);
+					//Debug.DrawLine(Vector3.zero, new Vector3(1, 0, 0), Color.red);
+					//Debug.DrawLine(transform.position, other.transform.position, Color.red, 300.0f, true);
                     // ... and if the raycast hits the player...
-					if (other.tag == "Player")
+					if (hit.collider.tag == "Player")
                     {
                         // ... the player is in sight.
                         playerInSight = true; //Now we need to kill the game somehow
 						//print("raycast hit");
+						print("died");
 						busted.GetComponent<RawImage>().enabled = true;
                         //Application.Quit(); //Why doesn't this happen?
                     }
