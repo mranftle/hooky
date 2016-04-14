@@ -53,3 +53,16 @@
 /Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/obj/Debug/Assembly-CSharp.dll.mdb
 /Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/Assembly-CSharp.dll.mdb
 /Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/UnityEngine.dll
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/UnityEditor.dll
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/Mono.Cecil.dll
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/Unity.DataContract.dll
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/wintyeehnin/Documents/Classes/CSE 450A/hooky/Temp/bin/Debug/Mono.Cecil.Mdb.dll

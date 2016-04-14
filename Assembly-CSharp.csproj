@@ -55,6 +55,7 @@
      <Compile Include="Assets\Materials\Scripts\CameraController.cs" />
      <Compile Include="Assets\Materials\Scripts\CharactersOnMinimap.cs" />
      <Compile Include="Assets\Materials\Scripts\DeanPatrol.cs" />
+     <Compile Include="Assets\Materials\Scripts\DirectionController.cs" />
      <Compile Include="Assets\Materials\Scripts\DoorController.cs" />
      <Compile Include="Assets\Materials\Scripts\KeyDoorController.cs" />
      <Compile Include="Assets\Materials\Scripts\MinimapCameraController.cs" />
@@ -64,6 +65,8 @@
      <Compile Include="Assets\Materials\Scripts\TeacherPatrol.cs" />
      <Compile Include="Assets\Materials\Scripts\TeacherSight.cs" />
      <Compile Include="Assets\Materials\Scripts\WaterBottleController.cs" />
+     <Compile Include="Assets\Materials\Scripts\starsController.cs" />
+     <Compile Include="Assets\Materials\Scripts\wholeMapController.cs" />
      <None Include="Assets\TaichiCharacterPack\Shaders\toon_cutoff.shader" />
      <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\M01\animation_list.txt" />
      <None Include="Assets\TaichiCharacterPack\TwinViewer\Resources\Taichi\TwinViewer Settings\background_list.txt" />
